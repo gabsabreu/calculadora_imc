@@ -30,7 +30,23 @@ class _HomeState extends State<Home> {
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          Icon(Icons.person_outline_sharp, size: 140.0, color: Colors.cyan)
+          Icon(Icons.person_outline_sharp, size: 120.0, color: Colors.cyan),
+          TextField(
+            keyboardType: TextInputType.number,
+            decoration: InputDecoration(
+                labelText: "Peso (kg)",
+                labelStyle: TextStyle(color: Colors.cyan)),
+            textAlign: TextAlign.center,
+            style: TextStyle(color: Colors.cyan, fontSize: 25.0),
+          ),
+          TextField(
+            keyboardType: TextInputType.number,
+            decoration: InputDecoration(
+                labelText: "Altura (cm)",
+                labelStyle: TextStyle(color: Colors.cyan)),
+            textAlign: TextAlign.center,
+            style: TextStyle(color: Colors.cyan, fontSize: 25.0),
+          ),
         ],
       ),
     );
